@@ -8,6 +8,7 @@
 
     $loader = new \Twig\Loader\FilesystemLoader('../src/vue/'); 
     $twig = new \Twig\Environment($loader, []);
-    $contenu = getPage();
-    $contenu($twig);
+    $db = connect($config);
+    $contenu = getPage($db);
+    $contenu($twig,$db);
 ?>

@@ -2,7 +2,7 @@
     function accueilControleur($twig){
         echo $twig->render('accueil.html.twig', array());
     }
-    function maintenaceControleur($twig) {
+    function maintenanceControleur($twig) {
         echo $twig->render('maintenance.html.twig', array());
     }
     function contactControleur($twig){
